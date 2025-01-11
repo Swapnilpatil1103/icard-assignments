@@ -1,0 +1,415 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/aAbsoluteEmpire.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    justify-items: center;
+
+}
+
+.icard-background {
+    height: 180mm;
+    width: 210mm;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icard-background .front-side {
+    height: 140mm;
+    width: 85mm;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 2mm 2mm 3mm rgb(98, 96, 96);
+}
+
+.icard-background .back-side {
+    height: 140mm;
+    width: 85mm;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 2mm 2mm 3mm rgb(98, 96, 96);
+}
+
+.front-side .left-cyan {
+    height: 100mm;
+    width: 40mm;
+    background-color: #DAFDFF;
+    transform: skewY(45deg);
+    position: relative;
+    bottom: 20.5mm;
+    overflow: hidden;
+}
+
+.left-cyan .left-purple {
+    height: 80mm;
+    width: 40mm;
+    background-color: #433769;
+    transform: skewY(-45deg);
+    position: relative;
+    top: 50mm;
+    opacity: 0.1;
+}
+
+.front-side .top-rect {
+    height: 10mm;
+    width: 37.2mm;
+    background-color: #03F6FA;
+    position: relative;
+    left: 48mm;
+    bottom: 100mm;
+}
+
+.front-side .right-tri {
+    height: 33mm;
+    width: 30mm;
+    background-color: #01CFDC;
+    transform: skewX(45deg);
+    position: relative;
+    bottom: 110mm;
+    left: 75.5mm;
+}
+
+.right-tri .sub-right-tri {
+    height: 16mm;
+    width: 16mm;
+    background-color: #433769;
+    position: relative;
+    top: 10.1mm;
+}
+
+.front-side .sub-tri-cyan {
+    height: 33mm;
+    width: 12mm;
+    background-color: #43D9EA;
+    transform: skewX(45deg);
+    position: relative;
+    bottom: 133mm;
+    left: 73.6mm;
+}
+
+.sub-tri-cyan .sub-tri-purple {
+    height: 8mm;
+    width: 10mm;
+    background-color: #433769;
+    position: relative;
+    top: 20mm;
+}
+
+.front-side .aeroplane-logo {
+    height: 11mm;
+    width: 11mm;
+    position: relative;
+    bottom: 170mm;
+    left: 52.5mm;
+    transform: rotate(-90deg);
+    border: 3.5mm solid white;
+    border-radius: 15mm;
+}
+
+.front-side .right-cyan {
+    height: 50mm;
+    width: 40mm;
+    background-color: #CBE9F0;
+    position: relative;
+    bottom: 164.8mm;
+    left: 62mm;
+    transform: skewX(45deg);
+
+}
+
+.front-side .idpic {
+    height: 55mm;
+    width: 55mm;
+    position: relative;
+    bottom: 225mm;
+    left: 15mm;
+    border-radius: 50mm;
+
+    object-fit: cover;
+}
+
+.front-side .left-bottom {
+    height: 40mm;
+    width: 72mm;
+    background-color: #433769;
+    transform: skewY(45deg);
+    position: relative;
+    bottom: 170mm;
+}
+
+.left-bottom .left-bottom-sub {
+    height: 40mm;
+    width: 45mm;
+    background-color: #53C1E2;
+    position: relative;
+    top: 12mm;
+}
+
+.front-side .left-opacity-rect {
+    height: 59mm;
+    width: 20mm;
+    background-color: #2CE7F6;
+    position: relative;
+    bottom: 271.5mm;
+    transform: skewY(45deg);
+    opacity: 0.8;
+
+}
+
+.left-opacity-rect .middle-box {
+    height: 35.5mm;
+    width: 10mm;
+    background-color: #1fbcce;
+    position: relative;
+    left: 10mm;
+}
+
+.front-side .data {
+    height: 55mm;
+    width: 50mm;
+    text-align: center;
+
+    position: relative;
+    bottom: 320mm;
+    left: 23mm;
+}
+
+.data #name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8mm;
+    font-weight: 900;
+    color: #433769;
+    margin: 0;
+    padding: 0;
+    margin-top: 5mm;
+}
+
+.data #surname {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 8mm;
+    font-weight: 800;
+    color: #1fbcce;
+    position: relative;
+    bottom: 6mm;
+}
+
+.data #hr {
+    width: 43mm;
+    border: 0.4mm solid black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 4mm;
+    bottom: 10mm;
+}
+
+.data #position {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+    font-size: 4mm;
+    color: #433769;
+    position: relative;
+    bottom: 12mm;
+    left: 1mm;
+}
+
+.data #date {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-weight: 900;
+    color: #433769;
+    position: relative;
+    bottom: 15mm;
+}
+
+#date-no {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.2mm;
+}
+
+/* backside content */
+
+.back-side .topR-rect-purple {
+    height: 8mm;
+    width: 38mm;
+    background-color: #433769;
+    transform: skewX(30deg);
+    position: relative;
+    right: 2.2mm;
+}
+
+.back-side .topR-dark-cyan {
+    height: 50mm;
+    width: 100mm;
+    background-color: #1fbcce;
+    transform: skewX(-40deg);
+    position: relative;
+    right: 21mm;
+
+}
+
+.back-side .subR-rect-purple {
+    height: 30mm;
+    width: 50mm;
+    background-color: #433769;
+    transform: skewX(-40deg);
+    position: relative;
+    right: 38mm;
+    overflow: hidden;
+}
+
+.back-side .topR-light-cyan {
+    height: 37.8mm;
+    width: 60mm;
+    background-color: #2CE7F6;
+    position: relative;
+    left: 23mm;
+    bottom: 68mm;
+    transform: skewX(-40deg);
+
+}
+
+.subR-rect-purple .opacity-purple {
+    height: 15mm;
+    width: 25mm;
+    background-color: #2CE7F6;
+    position: relative;
+    left: 32.3mm;
+    opacity: 0.7;
+}
+
+.back-side .right-content {
+    height: 55mm;
+    width: 65mm;
+
+
+    position: relative;
+    bottom: 60mm;
+    left: 9mm;
+    align-content: center;
+
+}
+
+.right-content .footer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+
+}
+
+.right-content .footer #address {
+    font-family: 'Times New Roman', Times, serif;
+    color: #433769;
+    font-weight: 700;
+    font-size: 3.5mm;
+}
+
+.footer #id {
+    position: relative;
+    top: 1mm;
+}
+
+.footer #no {
+    position: relative;
+    top: 2mm;
+}
+
+.final-data {
+    text-align: justify;
+    position: relative;
+    right: 5mm;
+    top: 13mm;
+}
+
+.final-data .info {
+    font-size: 3mm;
+    font-family: 'Times New Roman', Times, serif;
+    color: #433769;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 10mm;
+}
+
+.back-side .idlogo {
+    height: 20mm;
+    width: 20mm;
+    border-radius: 10mm;
+    position: relative;
+    bottom: 153mm;
+    left: 13mm;
+}
+
+.back-side #company-name {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5mm;
+    font-size: 7.5mm;
+    color: white;
+    bottom: 178mm;
+    left: 36.5mm;
+}
+
+.back-side #company-name-subtitle {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 9mm;
+    color: white;
+    bottom: 198mm;
+    left: 35mm;
+}
+
+/* footer section */
+
+.back-side .footer-rect-cyan {
+    height: 10mm;
+    width: 85mm;
+    background-color: #03F6FA;
+    position: relative;
+    bottom: 123mm;
+    text-align: center;
+}
+
+.footer-rect-cyan .footer-dark-cyan {
+    height: 10mm;
+    width: 30mm;
+    background-color: #1fbcce;
+    transform: skewX(-40deg);
+    position: relative;
+    right: 12mm;
+}
+
+.footer-rect-cyan #footer-mail {
+    position: relative;
+    bottom: 11.5mm;
+    font-size: 4mm;
+}
+
+.back-side .footer-right-tri {
+    height: 13mm;
+    width: 20mm;
+    background-color: #1fbcce;
+    position: relative;
+    bottom: 146mm;
+    left: 80mm;
+    transform: skewX(-40deg);
+}
+
+.footer-right-tri .footer-sub-tri {
+    height: 9mm;
+    width: 15mm;
+    background-color: #433769;
+}
